@@ -27,8 +27,24 @@ class Form extends React.Component{
         );
     }
     submitForm = () =>{
-        this.props.handleSubmit(this.state)
-        this.setState(this.initialState)
+        if(document.getElementById("name").value===""){
+            alert("Name must be filled");
+        }
+        else if(document.getElementById("job").value===""){
+            alert("Job must be filled");
+        }
+        else{
+            if(!document.getElementById("name").value.match("^[a-zA-Z ]*$")){
+                alert("Name should be Alphabetic only");
+            }
+            else if(!document.getElementById("job").value.match("^[a-zA-Z ]*$")){
+                alert("Job title should be Alphabetic only");
+            }
+            else{
+                this.props.handleSubmit(this.state)
+                this.setState(this.initialState)
+            }
+        }
     }
 }
 

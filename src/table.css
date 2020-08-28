@@ -1,0 +1,38 @@
+.icon-edit img{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+}
+.icon-edit{
+    padding: 0%;
+    width: 20px;
+    height: 20px;
+    border: black;
+    background-color: white;
+}
+.icon-cancel img{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+}
+.icon-cancel{
+    display: none;
+    padding: 0%;
+    width: 20px;
+    height: 20px;
+    border: black;
+    background-color: white;
+}
+.icon-save img{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+}
+.icon-save{
+    display: none;
+    padding: 0%;
+    width: 20px;
+    height: 20px;
+    border: black;
+    background-color: white;
+}

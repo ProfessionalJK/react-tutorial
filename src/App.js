@@ -23,10 +23,10 @@ class App extends React.Component{
             }),
         })
     }
+    
     handleSubmit = (character) => {
         this.setState({characters: [...this.state.characters, character]})
     }
-    
 }
 
 export default App;
